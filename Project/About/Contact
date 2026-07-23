@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About & Contact   My Personal Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <h1>About Me & Contact</h1>
+        <p>Get in touch and get to know more about my background and skills.</p>
+        <nav>
+            <ul>
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About/Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>My Background Journey</h2>
+            <p>Welcome to my about page! I'm a soon to be web developer learning and getting the  experience in creating dynamic and user-friendly websites.</p>
+        </section>
+
+        <section>
+            <h2>Contact Information</h2>
+            <p>Email: bricks@my.campus.edu</p>
+            <p>Phone: (903) 204-3795</p>
+            <h3>Digital Channels</h3>
+            <p>Placeholder text: Standard contact links including email forms, digital networks, and professional platform direct links.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Brianna Ricks. Portfolio Framework Site.</p>
+    </footer>
+
+</body>
+</html>

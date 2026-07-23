@@ -1,0 +1,41 @@
+ <html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home   My Personal Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <h1>Brianna's Portfolio</h1>
+        <p>Welcome to my professional space on the web.</p>
+    <nav>
+        <ul>
+            <li><a href="index2.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About/Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section>
+            <h2>Professional Summary</h2>
+            <p>Hello! My name is Brianna Ricks, and I am thrilled to present my personal portfolio. This website serves as a showcase of my skills, projects, and professional journey in web development.</p>
+        </section>
+
+        <section>
+            <h2>Featured Skills</h2>
+            <h3>Frontend Tools</h3>
+            <p>Placeholder text: Experience working with semantic HTML tags and site planning methodologies.</p>
+        <section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Brianna Ricks. Portfolio Framework Site</p>
+    </footer>
+
+</body>
+</html>      
