@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com');
+
+:root {
+    --primary-brand: #9d5c63;
+    --secondary-brand: #e0a899;
+    --text-main: #2d2526;
+    --text-muted: #7a6f71;
+    --bg-main: #fffaf9;
+    --bg-card: #ffffff;
+    --border-color: #f3e9e7;
+
+    --space-8: 8px;
+    --space-16: 16px;
+    --space-24: 24px;
+    --space-32: 32px;
+    --space-48: 48px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-main);
+    background-color: var(--bg-main);
+    margin: 0;
+    padding: var(--space-16);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--primary-brand);
+  margin-top: 0;
+  font-weight: 600;
+}
+
+#main-header {
+    text-align: center;
+    padding: var(--space-48) 0 var(--space-32) 0;
+    margin-bottom: var(--space-24);
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-brand);
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: var(--secondary-brand);
+    transform: translateY(-1px);
+}
+
+
+
+.grid-container {
+    display: grid;
+
+    grid-template-colums: 1fr;
+    gap: var(--space-24);
+    width: 100%;
+}
+
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--space-8);
+    padding: var(--space-32);
+    box-shadow: 0 10px 25px -5px rgba(157, 92, 99, 0.04);
+    transition: transform 0.3s ease;
+}
+
+.card h3{
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: var(--space-16);
+}
+
+
+
+@media (min-width: 768px) {
+  body {
+    padding: var(--soace-32);
+  }
+
+  .grid-container {
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-32);
+  }
+}
+
+
+@media (min-width: 1200px) {
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .grid-container {
+    
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
