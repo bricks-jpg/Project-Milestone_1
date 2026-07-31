@@ -40,20 +40,21 @@ h1, h2, h3 {
 
 #main-header {
     text-align: center;
-    padding: var(--space-48) 0 var(--space-32) 0;
+    padding: var(--space-32) 0;
     margin-bottom: var(--space-24);
     border-bottom: 1px solid var(--border-color);
 }
 
 nav a {
     text-decoration: none;
+    display: inline-block;
     color: var(--primary-brand);
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-size: 0.85rem;
     transition: all 0.2s ease-in-out;
-    display: inline-block;
+    padding: 0 var(--space-8);
 }
 
 nav a:hover {
@@ -65,7 +66,6 @@ nav a:hover {
 
 .grid-container {
     display: grid;
-
     grid-template-colums: 1fr;
     gap: var(--space-24);
     width: 100%;
@@ -78,6 +78,10 @@ nav a:hover {
     padding: var(--space-32);
     box-shadow: 0 10px 25px -5px rgba(157, 92, 99, 0.04);
     transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
 }
 
 .card h3{
