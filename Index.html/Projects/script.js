@@ -12,3 +12,25 @@ toggleButton.addEventListener('click', () => {
         toggleButton.setAttribute('aria-expanded', 'false');
     }
 });
+
+const contactForm = document.querySelector('#contact-form');
+const nameInput = document.querySelector('#user-name');
+const nameError = document.querySelector('#name-error');
+
+if (contactForm && nameInput && nameError) {
+    contactForm.addEventListener('submit', (event) => {
+        nameError.textContent = '';
+
+        if (nameInput.value.trim() === '') {
+            event.preventDefault();
+            nameError.textContent = 'Please enter your name before submitting.';
+        }
+    });
+
+    nameInput.addEventListener('input', () => {
+        if (nameInput.value.trim() !== '') {
+            nameError.textContent = '';
+        }
+    });
+
+}

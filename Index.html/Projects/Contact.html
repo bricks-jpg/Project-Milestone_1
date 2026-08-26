@@ -28,13 +28,19 @@
         </section>
 
         <section>
-            <h2>Contact Information</h2>
+            <h2>Contact Me</h2>
             <p>Email: bricks@my.campus.edu</p>
             <p>Phone: (903) 204-3795</p>
 
-            <h3>Digital Channels</h3>
-            <form action="#" method="POST" novalidate style="margin-top: 30px;">
-                <fieldset>
+            <form id="contact-form" action="#" method="POST" novalidate style="margin-top: 20px;">
+
+                <div style="margin-bottom: 15px;">
+                    <label for="user-name" style="display: block; margin-bottom: 5px;">Full Name:</label>
+                    <input type="text" id="user-name" name="name" style="width: 100%; max-width: 300px; padding:5px;">
+                    <div id="name-error" style="color: red; font-size: 0.9em; margin-top: 5px"></div>
+                </div>
+
+                <fieldset style="border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
                   <legend>Send a Message</legend>
 
                   <div class="form-group" style="margin-bottom: 15px;">
@@ -52,7 +58,7 @@
                     <textarea id="message" name="message" rows="5" required aria-required="true" style="width: 100%; padding: 8px; box-sizing: border-box"></textarea>
                   </div>
 
-                  <button type="submit" style="background-color: #800020; color: white; padding: 10px 15px; border: none; border-radius: 4px;cursor: pointer; font-weight: bold,">Submit Message</button>
+                  <button type="submit" style="margin-top: 15px; padding: 8px 15px; cursor: pointer; font-weight: bold;">Submit Message</button>
                 </fieldset>
               </form>
         </section>            
@@ -62,5 +68,6 @@
         <p>&copy; 2026 Brianna Ricks. Portfolio Framework Site.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
