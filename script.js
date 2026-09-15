@@ -37,12 +37,14 @@ if (contactForm && nameInput && nameError) {
 
 if (contactForm) {
     contactForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+
         if (nameInput.value.trim() === '') {
-            event.preventDefault();
             nameError.textContent = 'Please enter your name before submitting.';
         } else {
             nameError.textContent = '';
             alert("Thank you! Your message has been sent.");
+            contactForm.reset();
         }
     });
 }
