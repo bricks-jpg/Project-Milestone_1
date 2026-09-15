@@ -66,7 +66,7 @@ nav a:hover {
 
 .grid-container {
     display: grid;
-    grid-template-colums: 1fr;
+    grid-template-columns: 1fr;
     gap: var(--space-24);
     width: 100%;
 }
@@ -95,13 +95,12 @@ nav a:hover {
 
 @media (min-width: 768px) {
   body {
-    padding: var(--soace-32);
+    padding: var(--space-32);
   }
 
   .grid-container {
-
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-32);
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-32);
   }
 }
 
@@ -160,6 +159,11 @@ input, textarea {
     border: 2px solid #800020;
     border-radius: 4px;
     box-sizing: border-box;
+
+    input:focus, textarea:focus {
+        outline: 3px solid var(--secondary-brand);
+        outline-offset: 2px;
+    }
 }
 
 button {
@@ -170,6 +174,11 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+}
+
+button:focus {
+    outline: 3px solid #590016;
+    outline-offset: 2px;
 }
 
 button:hover {
